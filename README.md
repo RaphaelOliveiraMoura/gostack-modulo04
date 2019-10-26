@@ -7,7 +7,8 @@ Run this commamnds with `yarn` or `npm` to manage the dependences.
 Babel and webpack:
 
 ```
-  yarn add @babel/core @babel/preset-env @babel/preset-react webpack webpack-cli -D
+  yarn add @babel/core @babel/preset-env @babel/preset-react @babel/plugin-proposal-class-properties -D
+  yarn add webpack webpack-cli -D
 ```
 
 Webpack loaders:
