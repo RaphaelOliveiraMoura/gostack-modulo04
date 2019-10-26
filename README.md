@@ -29,7 +29,8 @@ Create a file in root dir called `babel.config.js`:
 
 ```javascript
 module.exports = {
-  presets: ['@babel/preset-env', '@babel/preset-react']
+  presets: ['@babel/preset-env', '@babel/preset-react'],
+  plugins: ['@babel/plugin-proposal-class-properties']
 };
 ```
 
