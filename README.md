@@ -4,9 +4,19 @@
 
 Run this commamnds with `yarn` or `npm` to manage the dependences.
 
+Babel and webpack:
+
 ```
-  yarn add @babel/core @babel/preset-env @babel/preset-react webpack webpack-cli babel-loader -D
+  yarn add @babel/core @babel/preset-env @babel/preset-react webpack webpack-cli -D
 ```
+
+Webpack loaders:
+
+```
+  yarn add babel-loader style-loader css-loader file-loader -D
+```
+
+React lib:
 
 ```
   yarn add react react-dom
@@ -41,6 +51,14 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: { loader: 'babel-loader' }
+      },
+      {
+        test: /\.css$/,
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
+      },
+      {
+        test: /.*\.(gif|jpe?g|png)$/i,
+        use: { loader: 'file-loader' }
       }
     ]
   }
